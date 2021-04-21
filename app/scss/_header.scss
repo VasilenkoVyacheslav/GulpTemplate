@@ -1,0 +1,39 @@
+.header{
+	position: absolute;
+	top: 35px;
+	left: 0;
+	right: 0;
+}
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo__position{
+	padding-top: 5px;
+	padding-left: 54px;
+}
+.navigation{
+	padding-left: 200px;
+}
+.navigation{
+	ul{
+		display: flex;
+	}
+	li{
+		padding-right: 28px;
+	}
+}
+.navigation__link{
+	color:$font_color;
+	font-size: 14px;
+}
+.navigation__link:hover{
+	color:$activ_color;
+}
+.search{
+	display: flex;
+}
+.search__element{
+	padding-left: 24px;
+}

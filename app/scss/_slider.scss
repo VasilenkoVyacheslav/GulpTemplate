@@ -1,0 +1,21 @@
+.slider{
+	background: url(../images/dest/main-back.jpg) no-repeat 100% 0;
+	background-size: cover;
+	min-height: 100vh;
+
+	&__prev {
+
+	}
+
+	&__pagination {
+
+
+		.swiper-pagination-bullet {
+
+
+			&.swiper-pagination-bullet-active {
+
+			}
+		}
+	}
+}

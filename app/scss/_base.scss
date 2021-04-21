@@ -1,41 +1,40 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300;400;500;600;800&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font: 300 16px/1.2 'Montserrat', Raleway, verdana, sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+	color:$font_color;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+}
+table,td,th{
+	border-collapse: collapse;
 }
 
-body {
-  font: 300 16px/1.2 'Montserrat', Raleway, verdana, sans-serif;
-  color: $font_color;
+input{
+	outline: none;
 }
 
-a {
-  text-decoration: none;
+.wrapper{
+	position: relative;
+	overflow: hidden;
 }
 
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-input {
-  outline: none;
-}
-
-.wrapper {
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+.container{
+	max-width: 1220px;
+	margin:0 auto;
 }

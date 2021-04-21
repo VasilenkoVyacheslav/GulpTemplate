@@ -4,19 +4,80 @@
 <head>
  
 	<meta charset="UTF-8">
-	<title>Document</title>
- 
-	<!-- Подключаем стили проекта -->
+	<title>Waxom</title>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/app.min.css">
  
 </head>
- 
 <body>
- 
-	<p>Далеко-далеко за словесными горами в стране, гласных и согласных...</p>
- 
-	<!-- Подключаем оптимизированное изображение -->
-	<img src="images/dest/image.jpg" alt="Alt">
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo logo--position">
+					<a href="#"><img src="images/dest/Logo.png" alt="Logo"></a>
+			    </div>
+				<nav class="navigation">
+					<ul>
+						<li><a class="navigation__link" href="#">Home</a></li>
+						<li><a class="navigation__link" href="#">About Us</a></li>
+						<li><a class="navigation__link" href="#">Portfolio</a></li>
+						<li><a class="navigation__link" href="#">Features</a></li>
+						<li><a class="navigation__link" href="#">Blog</a></li>
+						<li><a class="navigation__link" href="#">Pricing</a></li>
+						<li><a class="navigation__link" href="#">Shortcodes</a></li>
+						<li><a class="navigation__link" href="#">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="search">
+					<div class="search__element">
+						<a href="#"><img src="images/dest/Cart.png" alt="basket"></a>
+					</div>
+					<div class="search__element">
+						<a href="#"><img src="images/dest/Search.png" alt="search"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="slider">
+		<div class="swiper-container main-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="container">
+						Slide 1
+					</div>
+				</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+			</div>
+
+			<div class="swiper-pagination slider__pagination"></div>
+
+			<div class="swiper-button-prev slider__prev"></div>
+			<div class="swiper-button-next slider__next"></div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</div>
  
 	<!-- Подключаем скрипты проекта -->
 	<script src="js/app.min.js"></script>
