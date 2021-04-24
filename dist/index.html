@@ -2,85 +2,185 @@
 <html lang="en">
  
 <head>
- 
-	<meta charset="UTF-8">
-	<title>Waxom</title>
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/app.min.css">
- 
+<meta charset="UTF-8">
+<title>Document</title>
+ <!-- Подключаем стили проекта -->
+<link rel="stylesheet" href="css/app.min.css"> 
 </head>
+ 
 <body>
-<div class="wrapper">
-	<header class="header">
-		<div class="container">
-			<div class="header-inner">
-				<div class="logo logo--position">
-					<a href="#"><img src="images/dest/Logo.png" alt="Logo"></a>
-			    </div>
+	<div class="wrapper">
+		<div class="header">
+			<header class="header__row container">
+				<div class="logo">
+					<a href="#" class="logo__link">
+						<img class="logo__icon" src="./images/dest/icons/logo.png" alt="logo">
+					</a>
+				</div>
 				<nav class="navigation">
-					<ul>
-						<li><a class="navigation__link" href="#">Home</a></li>
-						<li><a class="navigation__link" href="#">About Us</a></li>
-						<li><a class="navigation__link" href="#">Portfolio</a></li>
-						<li><a class="navigation__link" href="#">Features</a></li>
-						<li><a class="navigation__link" href="#">Blog</a></li>
-						<li><a class="navigation__link" href="#">Pricing</a></li>
-						<li><a class="navigation__link" href="#">Shortcodes</a></li>
-						<li><a class="navigation__link" href="#">Contact</a></li>
-					</ul>
+					<a href="#" class="navigation__item">Home</a>
+					<a href="#" class="navigation__item">About Us</a>
+					<a href="#" class="navigation__item">Portfolio</a>
+					<a href="#" class="navigation__item">Features</a>
+					<a href="#" class="navigation__item">Blog</a>
+					<a href="#" class="navigation__item">Pricing</a>
+					<a href="#" class="navigation__item">Shortcodes</a>
+					<a href="#" class="navigation__item">Contact</a>
 				</nav>
 				<div class="search">
-					<div class="search__element">
-						<a href="#"><img src="images/dest/Cart.png" alt="basket"></a>
+					<a href="#" class="search__link">
+						<img class="search__icon" src="./images/dest/icons/cart.svg" alt="cart">
+					</a>
+					<a href="#" class="search__link">
+						<img class="search__icon" src="./images/dest/icons/icon-search.svg" alt="search">
+					</a>
+				</div>
+			</header>
+		</div>
+		<section class="slider">
+			<!-- Slider main container -->
+			<div class="swiper-container main-slider container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="container"> 
+							<div class="slider-row">
+								<div class="slider__title">Unique and Modern Design</div>
+								<div class="slider__subtitle">Portfolio PSD Template</div>
+								<p class="slider__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+								<div class="slider__btn-wrapper">
+									<a href="">Get Started</a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="search__element">
-						<a href="#"><img src="images/dest/Search.png" alt="search"></a>
+					<div class="swiper-slide">
+						<div class="container"> 
+							<div class="slider-row">
+								<div class="slider__title">Unique and Modern Design</div>
+								<div class="slider__subtitle">Hello, slider!</div>
+								<p class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil ex, voluptatum assumenda deleniti, libero quaerat quo cum ab est iste sit aliquam esse quibusdam.</p>
+								<div class="slider__btn-wrapper">
+									<a href="">Hover me</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container"> 
+							<div class="slider-row">
+								<div class="slider__title">Follow the white rabbit</div>
+								<div class="slider__subtitle">Just Do It</div>
+								<p class="slider__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+								<div class="slider__btn-wrapper">
+									<a href="">Buy ticket</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination slider__pagination"></div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev slider__prev"></div>
+				<div class="swiper-button-next slider__next"></div>
+			</div>
+		</section>
+		<section class="services">
+			<div class="container">
+				<div class="row">
+					<div class="col--25">
+						<div class="services__icon">
+							<img src="./images/dest/icon1.svg" alt="Web & App design">
+							<img src="./images/dest/icon1_hover.svg" alt="Web & App design">
+						</div>
+						<h4 class="services__title">Web & App design</h4>
+						<p class="services__text">
+							Nam liber tempor cum soluta nobis eleifend option congue                           nihil imperdiet doming id quod mazim.
+						</p>
+					</div>
+					<div class="col--25">
+						<div class="services__icon">
+							<img src="./images/dest/icon2.svg" alt="Development">
+							<img src="./images/dest/icon2_hover.svg" alt="Development">
+						</div>
+						<h4 class="services__title">Development</h4>
+						<p class="services__text">
+							Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.						</p>
+					</div>
+					<div class="col--25">
+						<div class="services__icon">
+							<img src="./images/dest/icon3.svg" alt="Customization">
+							<img src="./images/dest/icon3_hover.svg" alt="Customization">
+						</div>
+						<h4 class="services__title">Customization</h4>
+						<p class="services__text">
+							Nam liber tempor cum soluta nobis eleifend option congue                           nihil imperdiet doming id quod mazim.
+					</div>
+					<div class="col--25">
+						<div class="services__icon">
+							<img src="./images/dest/icon4.svg" alt="Marketing">
+							<img src="./images/dest/icon4_hover.svg" alt="Marketing">
+						</div>
+						<h4 class="services__title">Marketing</h4>
+						<p class="services__text">
+							Nam liber tempor cum soluta nobis eleifend option congue                           nihil imperdiet doming id quod mazim.
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<section class="slider">
-		<div class="swiper-container main-slider">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="container">
-						Slide 1
+		</section>
+        <section class="ideas">
+            <div class="container">
+				<h3 class="title-30">Waxom is Realization of your Ideas.</h3>
+				<p class="text">
+					Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+				</p>
+			</div>
+			<div class="ideas__container">
+				<img src="" alt="">
+			</div>
+			<div class="ideas__footer">
+				<div class="container">
+
+				</div>
+			</div>
+        </section>
+		<section class="projects">
+			<div class="container">
+				<h3 class="title-30">Our Latest Projects.</h3>
+				<p class="text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+				<div class="projects__tabs">
+					<ul>
+						<li><a href="#tabs-1">All</a></li>
+						<li><a href="#tabs-2">Web Design</a></li>
+						<li><a href="#tabs-3">Mobile App</a></li>
+						<li><a href="#tabs-4">Illustration</a></li>
+						<li><a href="#tabs-5">Photography</a></li>
+					</ul>
+
+					<div id="tabs-1">
+						<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+					</div>
+					<div id="tabs-2">
+						<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-3">
+						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+						<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+					</div>
+					<div id="tabs-4">
+						<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+					</div>
+					<div id="tabs-5">
+						<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+						<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
 					</div>
 				</div>
-				<div class="swiper-slide">Slide 2</div>
-				<div class="swiper-slide">Slide 3</div>
 			</div>
-
-			<div class="swiper-pagination slider__pagination"></div>
-
-			<div class="swiper-button-prev slider__prev"></div>
-			<div class="swiper-button-next slider__next"></div>
-		</div>
-	</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-</div>
- 
-	<!-- Подключаем скрипты проекта -->
-	<script src="js/app.min.js"></script>
- 
+		</section>
+	</div>
+<!-- Подключаем скрипты проекта -->
+<script src="js/app.min.js"></script> 
 </body>
 </html>

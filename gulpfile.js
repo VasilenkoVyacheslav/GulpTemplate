@@ -47,6 +47,7 @@ function scripts() {
 	return src([ // Берём файлы из источников
 		'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
 		'node_modules/swiper/swiper-bundle.min.js',
+		'app/js/jquery-ui.js',
 		'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
 		])
 	.pipe(concat('app.min.js')) // Конкатенируем в один файл
@@ -58,6 +59,7 @@ function scripts() {
 function styles() {
 	return src([
 		'node_modules/swiper/swiper-bundle.min.css',
+		'node_modules/jquery-ui/themes/base/tabs.css',
 		'app/scss/main.scss'
 	]) // Выбираем источник: "app/sass/main.sass"
 	.pipe(eval(preprocessor)()) // Преобразуем значение переменной "preprocessor" в функцию
@@ -109,15 +111,6 @@ function startwatch() {
  
 }
 
-function importJs() {
-	return src('app/js/app.js')
-		.pipe(jsImport({
-			hideConsole: true,
-			importStack: true
-		}))
-		.pipe(dest('app/js/'))
-}
-
 // Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.
 exports.browsersync = browsersync;
  
@@ -137,4 +130,4 @@ exports.cleanimg = cleanimg;
 exports.build = series(cleandist, styles, scripts, images, buildcopy);
 
 // Экспортируем дефолтный таск с нужным набором функций
-exports.default = parallel(cleandist, styles, scripts, images, buildcopy, browsersync, startwatch);
+exports.default = parallel(cleandist, styles, scripts, images,buildcopy, browsersync, startwatch);
