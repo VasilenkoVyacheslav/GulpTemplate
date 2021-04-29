@@ -46,7 +46,7 @@ function browsersync() {
 function scripts() {
 	return src([ // Берём файлы из источников
 		'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
-		'node_modules/swiper/swiper-bundle.min.js',
+		'node_modules/swiper/swiper-bundle.min.js', 
 		'app/js/jquery-ui.js',
 		'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
 		])
@@ -130,4 +130,4 @@ exports.cleanimg = cleanimg;
 exports.build = series(cleandist, styles, scripts, images, buildcopy);
 
 // Экспортируем дефолтный таск с нужным набором функций
-exports.default = parallel(cleandist, styles, scripts, images,buildcopy, browsersync, startwatch);
+exports.default = parallel(cleandist, styles, scripts, images, buildcopy, browsersync, startwatch);

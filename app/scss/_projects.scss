@@ -1,7 +1,131 @@
-.projects {
-  padding: 75px 0 80px;
+.projects{
+    padding: 75px 0 80px;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  &__tabs {
+    &__tabs{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__tabs a{
+        border-radius: 5px;
+        border: 1px solid #cda4a4;
+        font-size: 14px;
+        font-weight: 400;
+        color: #998675;
+        transition: 0.3s;
 
-  }
+        &:hover{
+            color: $white;
+        }
+    }
+    &__button a{        
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.6;
+        color: #ffffff;
+        background-color: #998675;
+        padding: 21px 39px ;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+        &:hover {
+            padding: 25px 50px;
+            background-color: #18b5a4;  
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out;
+        }
+        
+    }
+    &__button {
+        margin-top: 10px;
+    }
+}
+.ui-tabs .ui-tabs-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ui-tabs .ui-tabs-nav{
+    margin-bottom: 40px;
+}
+.ui-tabs .ui-tabs-nav li{
+    margin: 0px 5px;
+    transition: 0.3s;
+   
+
+    &:hover{
+        background-color: #998675; 
+        border-radius: 5px;
+    }
+}
+.col--33{
+    margin: 0 0 30px;
+    
+    
+    &__inner{
+        background-color: #fbfaf8; 
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    img {
+        display: block;
+    }
+    .author{
+        padding: 30px 0 26px 30px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            bottom: 100%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 15px 12px 15px;
+            border-color: transparent transparent #ffffff transparent;
+        }
+
+        &__name{
+            font-family: 'Raleway', 'Monserrat',Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: $brown;
+            margin-bottom: 15px;
+        
+        }
+
+        &__position{
+            font-size: 14px;
+            font-weight: 400;
+            
+        }
+    }
+    &:hover {
+
+        &__inner {
+            cursor: pointer;
+        }
+
+        .author {
+            background-color: $dark_brown;
+
+            &:before {
+                border-bottom-color: $dark_brown;
+            }
+        }
+    }
 }

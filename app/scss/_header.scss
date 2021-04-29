@@ -1,0 +1,27 @@
+.header{
+    width: 100%;
+    position: absolute;
+}
+.header__container{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation{
+    padding-top: 20px;
+}
+.navigation__item{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat',Raleway,Arial,sans-serif;
+    padding: 0 10px;
+}
+.search{
+    padding-top: 15px;
+}
+.search a{
+    padding: 0 10px;
+}
